@@ -117,3 +117,22 @@ agents/devin-knowledge.json
 
 # pagefind
 _pagefind/
+
+
+# --- HERMES SECURITY & DATA GUARD ---
+*.env
+.env
+.env.*
+*client_secret*.json
+*credentials*.json
+*service_account*.json
+*token*.json
+data/
+**/data/
+gdrive_staging/
+*.sqlite
+*.db
+!*.prisma
+!schema.prisma
+!migrations/
+!*.sql
