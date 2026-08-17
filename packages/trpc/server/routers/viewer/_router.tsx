@@ -12,6 +12,7 @@ import { bookingsRouter } from "./bookings/_router";
 import { calendarsRouter } from "./calendars/_router";
 import { calVideoRouter } from "./calVideo/_router";
 import { credentialsRouter } from "./credentials/_router";
+import { delegationRouter } from "./delegation/_router";
 import { deploymentSetupRouter } from "./deploymentSetup/_router";
 import { eventTypesRouter } from "./eventTypes/_router";
 import { eventTypesRouter as heavyEventTypesRouter } from "./eventTypes/heavy/_router";
@@ -19,13 +20,20 @@ import { feedbackRouter } from "./feedback/_router";
 import { googleWorkspaceRouter } from "./googleWorkspace/_router";
 import { holidaysRouter } from "./holidays/_router";
 import { i18nRouter } from "./i18n/_router";
+import { impersonationRouter } from "./impersonation/_router";
+import { insightsRouter } from "./insights/_router";
 import { meRouter } from "./me/_router";
 import { oAuthRouter } from "./oAuth/_router";
 import { oooRouter } from "./ooo/_router";
+import { recordingsRouter } from "./recordings/_router";
+import { routingFormsRouter } from "./routingForms/_router";
+import { samlRouter } from "./saml/_router";
 import { slotsRouter } from "./slots/_router";
+import { teamsRouter } from "./teams/_router";
 import { travelSchedulesRouter } from "./travelSchedules/_router";
 import { userAdminRouter } from "./users/_router";
 import { webhookRouter } from "./webhook/_router";
+import { workflowsRouter } from "./workflows/_router";
 
 export const viewerRouter = router({
   loggedInViewerRouter,
@@ -55,4 +63,12 @@ export const viewerRouter = router({
   ooo: oooRouter,
   holidays: holidaysRouter,
   travelSchedules: travelSchedulesRouter,
+  teams: teamsRouter,
+  workflows: workflowsRouter,
+  routingForms: routingFormsRouter,
+  insights: insightsRouter,
+  recordings: recordingsRouter,
+  saml: samlRouter,
+  impersonation: impersonationRouter,
+  delegation: delegationRouter,
 });
