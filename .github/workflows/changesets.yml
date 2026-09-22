@@ -1,10 +1,9 @@
+
 name: Create PR containing updated CHANGELOG.md and release packages to NPM once PR is merged
 
 on:
-  push:
-    branches:
-      - main
-
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 permissions:
   id-token: write # for NPM provenance - developers can verify where and how it was built

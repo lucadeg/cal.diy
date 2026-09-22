@@ -1,3 +1,4 @@
+
 name: "Release Docker"
 
 permissions:
@@ -11,10 +12,6 @@ env:
   DATABASE_HOST: "database:5432"
 
 on:
-  push:
-    tags:
-      - "v*"
-  # in case manual trigger is needed
   workflow_dispatch:
     inputs:
       BUILD_FROM_BRANCH:
@@ -29,6 +26,7 @@ on:
         type: boolean
         default: true
 
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 jobs:
   prepare:
     name: "Prepare Release"

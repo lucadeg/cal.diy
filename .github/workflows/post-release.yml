@@ -1,11 +1,8 @@
+
 name: Post release
 on:
   workflow_dispatch:
-  push:
-    # Pattern matched against refs/tags
-    tags:
-      - "*"
-
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 permissions:
   contents: write
 

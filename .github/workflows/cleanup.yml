@@ -1,9 +1,9 @@
+
 name: Delete
 
 on:
-  delete:
-    branches-ignore: [main, gh-pages]
-
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 permissions:
   contents: write
   issues: write

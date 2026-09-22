@@ -1,11 +1,9 @@
+
 name: Cron - checkSmsPrices
 
 on:
-  # "Scheduled workflows run on the latest commit on the default or base branch."
-  # — https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows#schedule
-  schedule:
-    # Runs “every minute” (see https://crontab.guru)
-    - cron: "* * * * *"
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 jobs:
   cron-checkSmsPrices:
     env:
